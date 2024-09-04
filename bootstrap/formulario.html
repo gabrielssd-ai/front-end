@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Responsivo</title>
+
+    
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js" defer></script>
+</head>
+
+<body>
+   
+    
+    <div class="container mt-5">
+        <h2 class="text-center">Cadastro de Usuário</h2>
+        <form>
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome:</label>
+                <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+            </div>
+            <div class="mb-3">
+                <label for="telefone" class="form-label">Telefone:</label>
+                <input type="text" class="form-control" id="telefone" placeholder="Digite seu telefone">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Digite seu email">
+            </div>
+            <div class="mb-3">
+                <label for="senha" class="form-label">Senha:</label>
+                <input type="password" class="form-control" id="senha" placeholder="Digite sua senha">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Sexo:</label><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="sexo" id="masculino" value="masculino">
+                    <label class="form-check-label" for="masculino">Masculino</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="sexo" id="feminino" value="feminino">
+                    <label class="form-check-label" for="feminino">Feminino</label>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="uf" class="form-label">UF:</label>
+                <select class="form-select" id="uf">
+                    <option selected>DF</option>
+                    <option value="AC">AC</option>
+                    <option value="AL">AL</option>
+                    <option value="AP">AP</option>
+                    
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Hobbies:</label><br>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="futebol" value="futebol">
+                    <label class="form-check-label" for="futebol">Futebol</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="xadrez" value="xadrez">
+                    <label class="form-check-label" for="xadrez">Xadrez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="esportes" value="esportes">
+                    <label class="form-check-label" for="esportes">Esportes</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="musica" value="musica">
+                    <label class="form-check-label" for="musica">Música</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="cinema" value="cinema">
+                    <label class="form-check-label" for="cinema">Cinema</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="leitura" value="leitura">
+                    <label class="form-check-label" for="leitura">Leitura</label>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="observacao" class="form-label">Observação:</label>
+                <textarea class="form-control" id="observacao" rows="3"></textarea>
+            </div>
+            <div class="text-end">
+                <button type="button" class="btn btn-secondary">Voltar</button>
+                <button type="reset" class="btn btn-warning">Limpar</button>
+                <button type="submit" class="btn btn-primary">Salvar</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
